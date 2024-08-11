@@ -1,6 +1,22 @@
 module Main (main) where
 
-import Lib
+import System.Environment (getProgName, getArgs)
+
+printHelpText :: String -> IO ()
+printHelpText message = do
+    putStrLn (message ++ "\n")
+    programName <- getProgName
+    putStrLn ("Usage: " ++ programName ++ " <filename>")
+
+parseArguments :: [String] -> Maybe FilePath
+parseArguments [filePath] = Just filePath
+parseArguments _ = Nothing
 
 main :: IO ()
-main = someFunc
+main = do
+    cliArgs <- getArgs
+    let mFilePath = parseArguments cliArgs
+    maybe
+        (printHelpText "Missing filename")
+        putStrLn
+        mFilePath

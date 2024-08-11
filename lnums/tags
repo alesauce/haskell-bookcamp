@@ -1,0 +1,17 @@
+!_TAG_FILE_SORTED	1	//
+Lib	/Users/alesauce/workspace/haskell-bookcamp/lnums/src/Lib.hs	1;"	m
+Lib	src/Lib.hs	1;"	m
+Main	/Users/alesauce/workspace/haskell-bookcamp/lnums/app/Main.hs	1;"	m
+Main	app/Main.hs	1;"	m
+main	/Users/alesauce/workspace/haskell-bookcamp/lnums/Setup.hs	2;"	f
+main	/Users/alesauce/workspace/haskell-bookcamp/lnums/app/Main.hs	15;"	f
+main	/Users/alesauce/workspace/haskell-bookcamp/lnums/test/Spec.hs	1;"	f
+main	Setup.hs	2;"	f
+main	app/Main.hs	15;"	f
+main	test/Spec.hs	1;"	f
+parseArguments	/Users/alesauce/workspace/haskell-bookcamp/lnums/app/Main.hs	11;"	f
+parseArguments	app/Main.hs	11;"	f
+printHelpText	/Users/alesauce/workspace/haskell-bookcamp/lnums/app/Main.hs	5;"	f
+printHelpText	app/Main.hs	5;"	f
+someFunc	/Users/alesauce/workspace/haskell-bookcamp/lnums/src/Lib.hs	5;"	f
+someFunc	src/Lib.hs	5;"	f
