@@ -21,11 +21,12 @@
       devShells = forAllSystems ({ pkgs }: {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            haskellPackages.stack
-            haskell.compiler.ghc965
-            haskellPackages.hlint
-            haskellPackages.ormolu
-          ];
+            haskell.compiler.ghc96
+          ] ++ (with pkgs.haskellPackages; [
+              hlint
+              stack
+              ormolu
+            ]);
         };
       });
     };
