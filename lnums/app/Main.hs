@@ -12,6 +12,11 @@ parseArguments :: [String] -> Maybe FilePath
 parseArguments [filePath] = Just filePath
 parseArguments _ = Nothing
 
+readLines :: FilePath -> IO [String]
+readLines filePath = do
+    contents <- readFile filePath
+    return (lines contents)
+
 main :: IO ()
 main = do
     cliArgs <- getArgs
